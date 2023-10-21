@@ -25,14 +25,19 @@ function startChild() {
 
 startChild();
 
-const config = {
-  port: process.env.X_PORT || 3000,
-  use_argo: process.env.X_ARGO || false,
-  argo_path: process.env.X_ARGO_PATH || './cloudflared',
-  argo_protocol: process.env.X_ARGO_PROTOCOL || '',
-  argo_region: process.env.X_ARGO_REGION || '',
-  argo_access_token: process.env.X_ARGO_TOKEN || '',
-};
+const config = (() => {
+  let config_json = JSON.parse(process.env.CONFIG);
+  return {
+    // core
+    port: config_json['port'] || 3000,
+    // argo (cloudflared)
+    argo_path: config_json['argo_path'] || './cloudflared',
+    use_argo: config_json['argo']['use'] || false,
+    argo_protocol: config_json['argo']['protocol'] || '',
+    argo_region: config_json['argo']['region'] || '',
+    argo_access_token: config_json['argo']['token'] || '',
+  };
+})();
 
 (async () => {
   if (config.use_argo) {
