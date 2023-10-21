@@ -1,1 +1,142 @@
-const _0xad745=_0x3298;function _0x5c26(){const _0x5ba566=['use_argo','argo_protocol','[Argo\x20Config]','X_ARGO','--no-autoupdate','exception','stderr','index.js','search','apply','match','info','426987BkevGA','[初始化]','from','constructor','--token','.\x20Restarting...','resolve','argo下载成功','win32','--protocol','678QPMeoI','\x1b[33m[Daemon]\x1b[0m\x20Child\x20process\x20exited\x20with\x20code\x20','domain:\x20','argo\x20chmod完成','35015zrOWws','tunnel','argo_path','return\x20(function()\x20','cwd','51673dkoBLW','bind','[初始化]\x20argo启动错误：','2044524vtCYud','domain:\x20Custom\x20Token','join','platform','prototype','close','https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64','184ybZmYp','--region','toString','trace','(((.+)+)+)+$','run','1085668mnhzQw','X_ARGO_PROTOCOL','X_PORT','X_ARGO_PATH','existsSync','chmod','--url','warn','https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-windows-amd64.exe','log','arrayBuffer','error','__proto__','argo_region','env','push','X_ARGO_TOKEN','9062685BOyGFX','child_process','argo_access_token','spawn','[Argo\x20Info]','port','17087jEXvli','fork','console','http://localhost:','table'];_0x5c26=function(){return _0x5ba566;};return _0x5c26();}(function(_0x15b6bb,_0x4fad26){const _0x5217b7=_0x3298,_0x13fc33=_0x15b6bb();while(!![]){try{const _0x376d89=parseInt(_0x5217b7(0x141))/0x1+parseInt(_0x5217b7(0x151))/0x2+parseInt(_0x5217b7(0x12e))/0x3+-parseInt(_0x5217b7(0x144))/0x4+-parseInt(_0x5217b7(0x13c))/0x5*(parseInt(_0x5217b7(0x138))/0x6)+parseInt(_0x5217b7(0x11d))/0x7*(parseInt(_0x5217b7(0x14b))/0x8)+parseInt(_0x5217b7(0x117))/0x9;if(_0x376d89===_0x4fad26)break;else _0x13fc33['push'](_0x13fc33['shift']());}catch(_0x523f2a){_0x13fc33['push'](_0x13fc33['shift']());}}}(_0x5c26,0x79742));function _0x3298(_0x13b751,_0x1b0ab0){const _0x5897f4=_0x5c26();return _0x3298=function(_0x1173ae,_0x51af8f){_0x1173ae=_0x1173ae-0x10b;let _0xa4aef9=_0x5897f4[_0x1173ae];return _0xa4aef9;},_0x3298(_0x13b751,_0x1b0ab0);}const cp=require(_0xad745(0x118)),path=require('path'),fs=require('fs'),os=require('os');let child;function startChild(){const _0x441349=_0xad745,_0x3ec944=(function(){let _0x2c14c0=!![];return function(_0x4ad070,_0x49f2c1){const _0x4e57eb=_0x2c14c0?function(){const _0x5e90dc=_0x3298;if(_0x49f2c1){const _0x401cfc=_0x49f2c1[_0x5e90dc(0x12b)](_0x4ad070,arguments);return _0x49f2c1=null,_0x401cfc;}}:function(){};return _0x2c14c0=![],_0x4e57eb;};}()),_0x3f3778=_0x3ec944(this,function(){const _0x145e7c=_0x3298;return _0x3f3778[_0x145e7c(0x14d)]()[_0x145e7c(0x12a)](_0x145e7c(0x14f))[_0x145e7c(0x14d)]()[_0x145e7c(0x131)](_0x3f3778)[_0x145e7c(0x12a)]('(((.+)+)+)+$');});_0x3f3778();const _0x2c9285=(function(){let _0x4a0185=!![];return function(_0x298317,_0x450ca6){const _0x1ed5e0=_0x4a0185?function(){const _0x23eaad=_0x3298;if(_0x450ca6){const _0xb4acf2=_0x450ca6[_0x23eaad(0x12b)](_0x298317,arguments);return _0x450ca6=null,_0xb4acf2;}}:function(){};return _0x4a0185=![],_0x1ed5e0;};}()),_0xd5a2a5=_0x2c9285(this,function(){const _0x28980d=_0x3298;let _0x3135d5;try{const _0x90110c=Function(_0x28980d(0x13f)+'{}.constructor(\x22return\x20this\x22)(\x20)'+');');_0x3135d5=_0x90110c();}catch(_0x41057e){_0x3135d5=window;}const _0x2af8dc=_0x3135d5['console']=_0x3135d5[_0x28980d(0x11f)]||{},_0x47931f=[_0x28980d(0x10f),_0x28980d(0x10d),_0x28980d(0x12d),_0x28980d(0x111),_0x28980d(0x127),_0x28980d(0x121),_0x28980d(0x14e)];for(let _0x510303=0x0;_0x510303<_0x47931f['length'];_0x510303++){const _0x1c3a7a=_0x2c9285[_0x28980d(0x131)][_0x28980d(0x148)][_0x28980d(0x142)](_0x2c9285),_0x595551=_0x47931f[_0x510303],_0x2092ad=_0x2af8dc[_0x595551]||_0x1c3a7a;_0x1c3a7a[_0x28980d(0x112)]=_0x2c9285['bind'](_0x2c9285),_0x1c3a7a['toString']=_0x2092ad['toString'][_0x28980d(0x142)](_0x2092ad),_0x2af8dc[_0x595551]=_0x1c3a7a;}});_0xd5a2a5(),child=cp[_0x441349(0x11e)](path[_0x441349(0x146)](__dirname,_0x441349(0x129))),child['on']('message',_0x38f121=>{console['log'](_0x38f121);}),child['on']('error',_0x3bc99e=>{const _0x38cb43=_0x441349;console[_0x38cb43(0x111)](_0x3bc99e);}),child['on'](_0x441349(0x149),_0x2e9eda=>{const _0x31db1b=_0x441349;console[_0x31db1b(0x10f)](_0x31db1b(0x139)+_0x2e9eda+_0x31db1b(0x133)),startChild();});}startChild();const config={'port':process[_0xad745(0x114)][_0xad745(0x153)]||0xbb8,'use_argo':process[_0xad745(0x114)][_0xad745(0x125)]||![],'argo_path':process['env'][_0xad745(0x154)]||'./cloudflared','argo_protocol':process[_0xad745(0x114)][_0xad745(0x152)]||'','argo_region':process[_0xad745(0x114)]['X_ARGO_REGION']||'','argo_access_token':process[_0xad745(0x114)][_0xad745(0x116)]||''};((async()=>{const _0x4b10c4=_0xad745;if(config[_0x4b10c4(0x122)]){if(!fs[_0x4b10c4(0x155)](path[_0x4b10c4(0x134)](process[_0x4b10c4(0x140)](),config['argo_path']))){const _0xa5fd4d=await download_argo();_0xa5fd4d?console[_0x4b10c4(0x10f)](_0x4b10c4(0x12f),_0x4b10c4(0x135)):console[_0x4b10c4(0x10f)](_0x4b10c4(0x12f),'argo下载失败');}else console[_0x4b10c4(0x10f)](_0x4b10c4(0x12f),'argo已存在');console[_0x4b10c4(0x10f)](await start_argo());}})());function download_argo(){return new Promise(async _0x1f6782=>{const _0x43f9d6=_0x3298;let _0xecf668=_0x43f9d6(0x14a);os[_0x43f9d6(0x147)]()==_0x43f9d6(0x136)&&(_0xecf668=_0x43f9d6(0x10e));try{const _0x40881e=await(await fetch(_0xecf668,{'redirect':'follow'}))[_0x43f9d6(0x110)]();fs['writeFileSync'](path['resolve'](process[_0x43f9d6(0x140)](),config[_0x43f9d6(0x13e)]),Buffer[_0x43f9d6(0x130)](_0x40881e)),_0x1f6782(!![]);}catch(_0x577ef6){console[_0x43f9d6(0x10f)](_0x577ef6),_0x1f6782(![]);}});}async function start_argo(){const _0x5bfefa=_0xad745;await(_0x519978=>{return new Promise(async _0x4c9830=>{const _0x110378=_0x3298;if(os['platform']()!='linux'){_0x4c9830();return;}let _0x188a1c=['+x',path['resolve'](process['cwd'](),config['argo_path'])],_0x698792=cp[_0x110378(0x11a)](_0x110378(0x10b),_0x188a1c);_0x698792['on'](_0x110378(0x149),()=>{const _0x3d2dd8=_0x110378;console[_0x3d2dd8(0x10f)](_0x3d2dd8(0x12f),_0x3d2dd8(0x13b)),setTimeout(_0x243b7f=>_0x4c9830(),0x64);});});})();let _0x14227a=[_0x5bfefa(0x10c),_0x5bfefa(0x120)+config[_0x5bfefa(0x11c)]];config[_0x5bfefa(0x119)]&&(_0x14227a=[_0x5bfefa(0x150),_0x5bfefa(0x132),config['argo_access_token']],console[_0x5bfefa(0x10f)](_0x5bfefa(0x124),_0x5bfefa(0x145)));config[_0x5bfefa(0x123)]&&_0x14227a[_0x5bfefa(0x115)](_0x5bfefa(0x137),config[_0x5bfefa(0x123)]);config['argo_region']&&_0x14227a[_0x5bfefa(0x115)](_0x5bfefa(0x14c),config[_0x5bfefa(0x113)]);let _0x468fc9=cp[_0x5bfefa(0x11a)](path[_0x5bfefa(0x134)](process[_0x5bfefa(0x140)](),config[_0x5bfefa(0x13e)]),[_0x5bfefa(0x13d),_0x5bfefa(0x126),..._0x14227a]);return new Promise(_0x18e45a=>{const _0x3514ff=_0x5bfefa;_0x468fc9[_0x3514ff(0x128)]['on']('data',_0x13e6d4=>{const _0x4860ad=_0x3514ff;if(/Registered tunnel connection/['test'](_0x13e6d4))console[_0x4860ad(0x10f)](_0x4860ad(0x11b),_0x13e6d4[_0x4860ad(0x14d)]()['match'](/(?<=Registered tunnel connection).*/)[0x0]['trim']());else{if(!config[_0x4860ad(0x119)]&&/https:\/\/.*[a-z]+cloudflare.com/['test'](_0x13e6d4))console['log'](_0x4860ad(0x124),_0x4860ad(0x13a)+_0x13e6d4[_0x4860ad(0x14d)]()[_0x4860ad(0x12c)](/(?<=https:\/\/).*[a-z]+cloudflare.com/)[0x0]);else{}}_0x18e45a('[初始化]\x20argo启动成功');}),_0x468fc9['on'](_0x3514ff(0x111),_0x552f29=>{const _0x5e2771=_0x3514ff;_0x18e45a(_0x5e2771(0x143)+_0x552f29);});});}
+const cp = require('child_process');
+const path = require('path');
+const fs = require('fs');
+const os = require('os');
+
+let child;
+
+function startChild() {
+  child = cp.fork(path.join(__dirname, 'index.js'));
+
+  child.on('message', data => {
+    console.log(data);
+  });
+  child.on('error', data => {
+    console.error(data);
+  });
+
+  child.on('close', code => {
+    console.log(
+      `\x1b[33m[Daemon]\x1b[0m Child process exited with code ${code}. Restarting...`
+    );
+    startChild();
+  });
+}
+
+startChild();
+
+const config = {
+  port: process.env.X_PORT || 3000,
+  use_argo: process.env.X_ARGO || false,
+  argo_path: process.env.X_ARGO_PATH || './cloudflared',
+  argo_protocol: process.env.X_ARGO_PROTOCOL || '',
+  argo_region: process.env.X_ARGO_REGION || '',
+  argo_access_token: process.env.X_ARGO_TOKEN || '',
+};
+
+(async () => {
+  if (config.use_argo) {
+    if (!fs.existsSync(path.resolve(process.cwd(), config.argo_path))) {
+      const foo = await download_argo();
+      if (foo) {
+        console.log('[初始化]', 'argo下载成功');
+      } else {
+        console.log('[初始化]', 'argo下载失败');
+      }
+    } else {
+      console.log('[初始化]', 'argo已存在');
+    }
+    console.log(await start_argo());
+  }
+})();
+
+// 下载argo
+function download_argo() {
+  return new Promise(async resolve => {
+    let url =
+      'https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64';
+    if (os.platform() == 'win32') {
+      url =
+        'https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-windows-amd64.exe';
+    }
+    try {
+      const res = await (
+        await fetch(url, {
+          redirect: 'follow',
+        })
+      ).arrayBuffer();
+      fs.writeFileSync(
+        path.resolve(process.cwd(), config.argo_path),
+        Buffer.from(res)
+      );
+      resolve(true);
+    } catch (err) {
+      console.log(err);
+      resolve(false);
+    }
+  });
+}
+// 启动argo
+async function start_argo() {
+  await (_ => {
+    return new Promise(async resolve => {
+      if (os.platform() != 'linux') {
+        resolve();
+        return;
+      }
+      let args = ['+x', path.resolve(process.cwd(), config.argo_path)];
+      let processC = cp.spawn('chmod', args);
+      processC.on('close', () => {
+        console.log('[初始化]', 'argo chmod完成');
+        setTimeout(_ => resolve(), 100);
+      });
+    });
+  })();
+
+  let args = ['--url', `http://localhost:${config.port}`];
+  if (config.argo_access_token) {
+    args = ['run', '--token', config.argo_access_token];
+    console.log('[Argo Config]', 'domain: Custom Token');
+  }
+  if (config.argo_protocol) {
+    args.push('--protocol', config.argo_protocol);
+  }
+  if (config.argo_region) {
+    args.push('--region', config.argo_region);
+  }
+  let processC = cp.spawn(path.resolve(process.cwd(), config.argo_path), [
+    'tunnel',
+    '--no-autoupdate',
+    ...args,
+  ]);
+  return new Promise(resolve => {
+    processC.stderr.on('data', data => {
+      // https://.*[a-z]+cloudflare.com
+      if (/Registered tunnel connection/.test(data)) {
+        console.log(
+          '[Argo Info]',
+          data
+            .toString()
+            .match(/(?<=Registered tunnel connection).*/)[0]
+            .trim()
+        );
+      } else if (
+        !config.argo_access_token &&
+        /https:\/\/.*[a-z]+cloudflare.com/.test(data)
+      ) {
+        console.log(
+          '[Argo Config]',
+          `domain: ${
+            data.toString().match(/(?<=https:\/\/).*[a-z]+cloudflare.com/)[0]
+          }`
+        );
+      } else {
+        // console.log(data.toString().trim());
+      }
+      resolve('[初始化] argo启动成功');
+    });
+    processC.on('error', err => {
+      resolve('[初始化] argo启动错误：' + err);
+    });
+  });
+}
