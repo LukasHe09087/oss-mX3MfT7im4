@@ -182,6 +182,7 @@ function keepalive() {
   // 保持唤醒
   let url_host = '';
   url_host = process.env.RENDER_EXTERNAL_HOSTNAME;
+  if (!url_host) return;
   https
     .get(`https://${url_host}/generate_204`, res => {
       if (res.statusCode == 204) {
