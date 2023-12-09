@@ -26,7 +26,12 @@ function startChild() {
 startChild();
 
 const config = (() => {
-  let config_json = JSON.parse(process.env.CONFIG);
+  let config_json;
+  try {
+    config_json = JSON.parse(process.env.CONFIG);
+  } catch {
+    config_json = JSON.parse(fs.writeFileSync('./config.json').toString());
+  }
   return {
     // core
     port: config_json['port'] || 3000,
