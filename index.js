@@ -1,6 +1,51 @@
 const cryptoJS = require('crypto-js');
+const os = require('os');
+const http = require('http');
+const https = require('https');
 
-const listen_port = process.env.X_PORT || 3000;
+const config = (() => {
+  let config_json;
+  try {
+    config_json = JSON.parse(process.env.CONFIG);
+  } catch {
+    try {
+      config_json = JSON.parse(fs.readFileSync('./config.json').toString());
+    } catch {
+      config_json = {};
+    }
+  }
+  let part_argo;
+  if (config_json['argo']) {
+    part_argo = {
+      argo_path:
+        config_json['argo_path'] ||
+        (os.platform() == 'win32' ? './cloudflared.exe' : './cloudflared'),
+      use_argo: config_json['argo']['use'] || false,
+      argo_protocol: config_json['argo']['protocol'] || '',
+      argo_region: config_json['argo']['region'] || '',
+      argo_access_token: config_json['argo']['token'] || '',
+    };
+  }
+  let part_tls;
+  if (config_json['tls']) {
+    part_tls = {
+      use_tls: config_json['tls']['use'] || false,
+      // please use base64 encode
+      tls_key:
+        Buffer.from(config_json['tls']['key'], 'base64').toString() || '',
+      tls_cert:
+        Buffer.from(config_json['tls']['cert'], 'base64').toString() || '',
+    };
+  }
+  return {
+    // core
+    port: config_json['port'] || 3000,
+    // tls
+    ...part_tls,
+    // argo (cloudflared)
+    ...part_argo,
+  };
+})();
 const proxy_address = '';
 const api_address = 'https://api.v2rayse.com/api/oss';
 const user_agent =
@@ -172,11 +217,29 @@ app.use((req, res) => {
 });
 
 // 启动服务器
-app.listen(listen_port, () => {
-  console.log('Server listening on port ' + listen_port);
-});
+listen_port();
+// 监听端口
+function listen_port() {
+  let serverProxy;
+  if (config.use_tls) {
+    console.log('[软件]', `Enabled https`);
+    if (config.tls_cert && config.tls_key) {
+      const options = {
+        key: config.tls_key,
+        cert: config.tls_cert,
+      };
+      serverProxy = https.createServer(options, app);
+    } else {
+      console.log('[软件]', `https missing: tls_cert,tls_key`);
+    }
+  } else {
+    serverProxy = http.createServer(app);
+  }
+  serverProxy.listen(config.port, () => {
+    console.log('[软件]', `Listening on port ${config.port}`);
+  });
+}
 
-const https = require('https');
 keepalive();
 function keepalive() {
   // 保持唤醒
