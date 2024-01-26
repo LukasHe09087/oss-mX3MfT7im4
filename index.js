@@ -141,8 +141,8 @@ const express = require('express');
 const compression = require('compression');
 const app = express();
 app.disable('x-powered-by');
-app.use(compression());
-app.use((req, res, next) => {
+app.all(compression());
+app.all((req, res, next) => {
   res.setHeader(
     'Access-Control-Allow-Methods',
     'GET,HEAD,POST,PUT,DELETE,CONNECT,OPTIONS,TRACE,PATCH'
