@@ -141,12 +141,13 @@ const express = require('express');
 const compression = require('compression');
 const app = express();
 app.disable('x-powered-by');
-app.all(compression());
-app.all((req, res, next) => {
+app.use(compression());
+app.use((req, res, next) => {
   res.setHeader(
     'Access-Control-Allow-Methods',
     'GET,HEAD,POST,PUT,DELETE,CONNECT,OPTIONS,TRACE,PATCH'
   );
+  res.setHeader('Access-Control-Allow-Headers', '*,Authorization');
   res.setHeader('Access-Control-Allow-Origin', '*');
   next();
 });
@@ -212,8 +213,13 @@ app.post('/delFile', async (req, res) => {
 
 // 处理 404 错误
 app.use((req, res) => {
-  res.status(404).header({ 'Content-Type': 'text/plain' });
-  res.end('404 Not Found');
+  // 防止浏览器POST跨域预检错误
+  if (req.method == 'OPTIONS') {
+    res.end('');
+  } else {
+    res.status(404).header({ 'Content-Type': 'text/plain' });
+    res.end('404 Not Found');
+  }
 });
 
 // 启动服务器
