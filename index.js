@@ -59,7 +59,7 @@ function getCfVerify() {
 }
 
 async function getList(password) {
-  if (password === undefined) return;
+  if (!password) return;
   let request = await (
     await fetch(proxy_address + api_address + '/' + password, {
       method: 'GET',
@@ -86,13 +86,7 @@ async function getFile(file_url) {
   return request;
 }
 async function setFile(password, folder, name, content) {
-  if (
-    password === undefined ||
-    folder === undefined ||
-    name === undefined ||
-    content === undefined
-  )
-    return;
+  if (!password || !folder || !name || !content) return;
   let body = {
     id: null,
     name: name,
@@ -115,8 +109,7 @@ async function setFile(password, folder, name, content) {
   return request;
 }
 async function delFile(password, folder, name) {
-  if (password === undefined || folder === undefined || name === undefined)
-    return;
+  if (!password || !folder || !name) return;
   let body = {
     id: null,
     name: name,
