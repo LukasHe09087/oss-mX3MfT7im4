@@ -155,12 +155,6 @@ app.use((req, res, next) => {
   next();
 });
 
-app.get('/version', (req, res) => {
-  res.status(200).header({
-    'Content-Type': 'text/plain',
-  });
-  res.end(process.version);
-});
 app.get('/generate_204', (req, res) => {
   res.status(204);
   res.end('');
